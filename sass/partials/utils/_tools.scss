@@ -1,0 +1,127 @@
+// @mixins
+
+@mixin flex($justify-content, $flex-direction : row) {
+    @extend %flex-row;
+    justify-content: $justify-content;
+    flex-direction: $flex-direction;
+}
+
+@mixin currentBg($color){
+    background: $color;
+}
+
+@mixin float($translatey, $name) {
+    @keyframes float#{$name} {
+        0% { transform: translatey(0); }
+        50% { transform: translatey($translatey); }
+        100% { transform: translatey(0); }
+    }
+    animation: float#{$name} 6s ease-in-out infinite;
+}
+
+
+// @extend
+
+%flex-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+%svg-animation{
+    .animate{
+        @include float(-7px, '');
+    }
+    .animate-reverse{
+        @include float(7px, '-reverse');
+    }
+    .animate-coffee{
+        animation: coffee 10s infinite;
+    }
+    .animate-coffee-support{
+        animation: coffee-support 10s infinite;
+    }
+    @for $var from 0 to 68 {
+        .code polygon:nth-child(#{$var}){
+            $i : #{$var/10}s;
+            animation: fadein 20s $i infinite;
+        }
+    }
+}
+
+
+
+
+
+// @keyframes
+
+
+
+@keyframes fadein {
+    0% {transform: translate(0); opacity:0;}
+    40% {transform: translate(0);opacity:1;}
+    65% {opacity:1 ; transform: translate(55px, -20px);}
+    99% {opacity:1 ;transform: translate(55px, -20px);}
+    100% {transform: translate(0);opacity:0;}
+}
+
+@keyframes coffee {
+    0% {transform: translate(0) scale(0.75);}
+    40% {transform: translate(40px, 40px) scale(0.75);}
+    100% {transform: translate(0) scale(0.75);}
+}
+
+@keyframes coffee-support {
+    0% {transform: translate(0);}
+    40% {transform: translate(40px, 40px) ;}
+    100% {transform: translate(0);}
+}
+
+@keyframes typing {
+    0% { width:0% }
+    30%, 90%{ width: 100%}
+    100% { width:0% }
+}
+
+@keyframes blink {
+    0%,100% {
+      border-right:2px solid transparent;
+    }
+    50% {
+      border-right:2px solid #fff;
+    }
+}
+
+@keyframes anim-gradient {
+    0%{
+      color: white;
+    }
+    16.667% {
+      color: white;
+    }
+    33.333% {
+        color: transparent;
+    }
+    50% {
+       color: transparent;
+    }
+    66.667% {
+        color: transparent;
+    }
+    100% {
+       color: white;
+   }
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 100%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+

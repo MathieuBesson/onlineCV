@@ -1,0 +1,31 @@
+h1, h2{
+    text-transform: uppercase;
+    font-family: 'Segoe UI';
+}
+
+h2, h3{
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+h2 {
+    font-size: 2.3em;
+    border-color: transparent;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(-90deg, #F7685B, #FF3C5F, #885AF8, #109CF1);
+    background-size: 400% 400%;
+    -webkit-animation: gradientBG 30s ease-in-out infinite;
+    animation: gradientBG 30s ease-in-out infinite;
+}
+
+h3{font-size: 1.8em;}
+
+
+
+
+
+
+
+

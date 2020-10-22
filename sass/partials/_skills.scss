@@ -1,0 +1,39 @@
+#skills {
+    @include currentBg(linear-gradient(139deg, rgb(35, 28, 100) 0%, rgb(12, 7, 54) 100%));
+    overflow: hidden;
+    color: white;
+    .skills-group {
+        @include flex(space-around);
+    }
+    .skills-group-type-title {
+        flex: 1 1 100%;
+    }
+    .skills-group-type {
+        @include flex(space-around);
+        flex: 0 1 30%;
+    }
+    .skills-group-type-block {
+        @include flex(space-around, column);
+        display: flex;
+        text-align: center;
+    }
+    .skills-group-type-block {
+        i {
+            margin: 25px;
+            font-size: 3.5em;
+            &.github {
+                color: #666666;
+            }
+            &.wordpress {
+                color: #0087be;
+            }
+        }
+        span {
+            font-weight: 600;
+        }
+        img {
+            width: 85px;
+            margin: 30px 0 15px 0;
+        }
+    }
+}
