@@ -13,19 +13,28 @@ body{
   margin: 0;
   padding: 0;
   list-style: none;
+  // word-break: break-all;
+  // hyphens: auto;
+  hyphens: none;
+  scroll-behavior: smooth;
+  text-decoration: none;
 }
 
+@import 'partials/utils/_vars';
 @import 'partials/utils/_titles';
 @import 'partials/utils/_tools';
 
-@import 'partials/_header';
-@import 'partials/_skills';
-@import 'partials/_portfolio';
-@import 'partials/_process';
+
+@import 'partials/sections/_header';
+@import 'partials/sections/_skills';
+@import 'partials/sections/_projects';
+@import 'partials/sections/_path';
+@import 'partials/sections/_contact';
+@import 'partials/sections/_footer';
 
 
-main > section, header{
-  padding: 4% 15%;
+main > section, footer{
+  padding: 75px 15%;
 }
 
 

@@ -1,31 +1,32 @@
-h1, h2{
+h1,h2 {
     text-transform: uppercase;
-    font-family: 'Segoe UI';
+    font-family: "Segoe UI";
+    font-size: 1.5em;
 }
 
-h2, h3{
+h2,h3 {
     text-align: center;
     margin-bottom: 45px;
 }
 
 h2 {
     font-size: 2.3em;
-    border-color: transparent;
-    color: transparent;
+    background: $main-gradient-title;
     -webkit-background-clip: text;
-    background-clip: text;
-    background-image: linear-gradient(-90deg, #F7685B, #FF3C5F, #885AF8, #109CF1);
+    -webkit-text-fill-color: transparent;
     background-size: 400% 400%;
     -webkit-animation: gradientBG 30s ease-in-out infinite;
     animation: gradientBG 30s ease-in-out infinite;
 }
 
-h3{font-size: 1.8em;}
+h3 {font-size: 1.8em;
+    color: white;
+    font-weight: 700;
+}
 
 
-
-
-
-
-
-
+// Media Queries
+@media screen and (max-width: 525px){
+    h2{font-size: 1.9em;}
+    h3{font-size: 1.6em;}
+}

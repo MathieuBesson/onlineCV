@@ -1,0 +1,14 @@
+footer{
+    @include currentBg($main-bg-color);
+    @include flex(space-between);
+    align-items: center;
+    .footer-contact-job{margin-bottom: 35px; text-align: left;}
+    p{margin: 15px 10px; a{color:white}}
+    i{margin:10px; font-size: 25px; color:white}
+    .footer-social-devicon-group{text-align: right;}
+
+    // Media Queries
+    @media screen and (max-width: 672px){
+        .footer-social-devicon-group{text-align: left;}
+    }
+}

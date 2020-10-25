@@ -1,115 +1,197 @@
 // @mixins
 
-@mixin flex($justify-content, $flex-direction : row) {
+@mixin flex($justify-content, $flex-direction: row) {
     @extend %flex-row;
     justify-content: $justify-content;
     flex-direction: $flex-direction;
 }
 
-@mixin currentBg($color){
+@mixin currentBg($color) {
     background: $color;
 }
 
 @mixin float($translatey, $name) {
     @keyframes float#{$name} {
-        0% { transform: translatey(0); }
-        50% { transform: translatey($translatey); }
-        100% { transform: translatey(0); }
+        0% {
+            transform: translatey(0);
+        }
+        50% {
+            transform: translatey($translatey);
+        }
+        100% {
+            transform: translatey(0);
+        }
     }
     animation: float#{$name} 6s ease-in-out infinite;
 }
 
+@mixin time-line-marker-dim($width, $height, $left, $br) {
+    @extend %time-line-marker;
+    width: $width;
+    height: $height;
+    left: $left;
+    border-radius: $br;
+    background-color: #fff;
+}
+
+@mixin arrow-direction($direction) {
+    @extend %arrow;
+    $border-width-right: 19px;
+    $border-width-left: 0px;
+    $border-color-right: #352885;
+    $border-color-left: transparent;
+    @if ($direction == left) {
+        $border-width-right: 0px;
+        $border-width-left: 19px;
+        $border-color-right: transparent;
+        $border-color-left: #352885;
+    }
+    border-width: 16.5px $border-width-right 16.5px $border-width-left;
+    border-color: transparent $border-color-right transparent $border-color-left;
+    #{$direction}: 45.6%;
+}
+
+@mixin bg-cover($path) {
+    background: url($path) center center no-repeat;
+    background-size: cover;
+}
+
+@mixin active($width) {
+    @extend %active-item;
+    &:after,
+    &:before {
+        width: $width;
+    }
+}
 
 // @extend
 
-%flex-row{
+%flex-row {
     display: flex;
     flex-wrap: wrap;
 }
 
-%svg-animation{
-    .animate{
-        @include float(-7px, '');
+%svg-animation {
+    .animate {
+        @include float(-7px, "");
     }
-    .animate-reverse{
-        @include float(7px, '-reverse');
+    .animate-reverse {
+        @include float(7px, "-reverse");
     }
-    .animate-coffee{
+    .animate-coffee {
         animation: coffee 10s infinite;
     }
-    .animate-coffee-support{
+    .animate-coffee-support {
         animation: coffee-support 10s infinite;
     }
     @for $var from 0 to 68 {
-        .code polygon:nth-child(#{$var}){
-            $i : #{$var/10}s;
+        .code polygon:nth-child(#{$var}) {
+            $i: #{$var/10}s;
             animation: fadein 20s $i infinite;
         }
     }
 }
 
+%time-line-marker {
+    content: "";
+    position: absolute;
+}
 
+%arrow {
+    @extend %time-line-marker;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    align-self: center;
+}
 
+%bounce-effect {
+    &:hover {
+        animation: 1.5s bounce ease;
+    }
+}
 
+%active-item {
+    &:after,
+    &:before {
+        content: "";
+        top: 110%;
+        left: 50%;
+        height: 3px;
+        background-color: $main-color;
+        position: absolute;
+        transition: all 0.3s ease;
+    }
+}
 
 // @keyframes
 
-
-
 @keyframes fadein {
-    0% {transform: translate(0); opacity:0;}
-    40% {transform: translate(0);opacity:1;}
-    65% {opacity:1 ; transform: translate(55px, -20px);}
-    99% {opacity:1 ;transform: translate(55px, -20px);}
-    100% {transform: translate(0);opacity:0;}
+    0% {
+        transform: translate(0);
+        opacity: 0;
+    }
+    40% {
+        transform: translate(0);
+        opacity: 1;
+    }
+    65% {
+        opacity: 1;
+        transform: translate(55px, -20px);
+    }
+    99% {
+        opacity: 1;
+        transform: translate(55px, -20px);
+    }
+    100% {
+        transform: translate(0);
+        opacity: 0;
+    }
 }
 
 @keyframes coffee {
-    0% {transform: translate(0) scale(0.75);}
-    40% {transform: translate(40px, 40px) scale(0.75);}
-    100% {transform: translate(0) scale(0.75);}
+    0% {
+        transform: translate(0) scale(0.75);
+    }
+    40% {
+        transform: translate(40px, 40px) scale(0.75);
+    }
+    100% {
+        transform: translate(0) scale(0.75);
+    }
 }
 
 @keyframes coffee-support {
-    0% {transform: translate(0);}
-    40% {transform: translate(40px, 40px) ;}
-    100% {transform: translate(0);}
-}
-
-@keyframes typing {
-    0% { width:0% }
-    30%, 90%{ width: 100%}
-    100% { width:0% }
-}
-
-@keyframes blink {
-    0%,100% {
-      border-right:2px solid transparent;
+    0% {
+        transform: translate(0);
     }
-    50% {
-      border-right:2px solid #fff;
+    40% {
+        transform: translate(40px, 40px);
+    }
+    100% {
+        transform: translate(0);
     }
 }
 
 @keyframes anim-gradient {
-    0%{
-      color: white;
+    0% {
+        color: white;
     }
     16.667% {
-      color: white;
+        color: white;
     }
     33.333% {
         color: transparent;
     }
     50% {
-       color: transparent;
+        color: transparent;
     }
     66.667% {
         color: transparent;
     }
     100% {
-       color: white;
-   }
+        color: white;
+    }
 }
 
 @keyframes gradientBG {
@@ -124,4 +206,26 @@
     }
 }
 
-
+@keyframes bounce {
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+    10% {
+        transform: scale(1, 0.9) translateY(0);
+    }
+    25% {
+        transform: scale(0.9, 1.1) translateY(-18px);
+    }
+    50% {
+        transform: scale(1.05, 0.95) translateY(0);
+    }
+    57% {
+        transform: scale(1, 1) translateY(-3px);
+    }
+    64% {
+        transform: scale(1, 1) translateY(0);
+    }
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}

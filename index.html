@@ -4,9 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="img/avatar.png" type="image/png">
+    <link rel="stylesheet" href="./css/main.min.css">
     <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.1.45/css/materialdesignicons.min.css">
+    <script src="script.js"></script>
     <title>Mathieu Besson</title>
 </head>
 
@@ -14,25 +17,27 @@
     <header>
         <nav class="menu">
             <div class="menu-name">
-                <img class="menu-name-img" src="avatar.svg" alt="">
+                <img class="menu-name-img" src="img/avatar.svg" alt="">
                 <h1 class="menu-name-title">Mathieu Besson</h1>
             </div>
             <ul class="menu-list">
-                <li class="menu-list-item">About</li>
-                <li class="menu-list-item">Experience</li>
-                <li class="menu-list-item">Parcours</li>
+                <li class="menu-list-item">
+                    <a class="menu-list-item-link" href="#skills">Compétences</a>
+                </li>
+                <li class="menu-list-item"><a class="menu-list-item-link" href="#projects">Projets</a></li>
+                <li class="menu-list-item"><a class="menu-list-item-link" href="#path">Parcours</a></li>
+                <li class="menu-list-item"><a class="menu-list-item-link" href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="bagnere">
             <article class="bagnere-block">
                 <div class="bagnere-block-text-typing">
-                    <h2 class="bagnere-block-text-typing-title">Développeur Web Full Stack <i class="em em-rocket"
-                            aria-role="presentation" aria-label="SMILING FACE WITH OPEN MOUTH"></i></h2>
+                    <h2 id="text-typing" class="bagnere-block-text-typing-title"></h2>
                 </div>
-                <p class="bagnere-block-content">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-                    possimus et
-                    saepe? Quibusdam cum quas sed quisquam quos reiciendis incidunt fugiat, temporibus id hic, esse
-                    numquam, accusamus modi consequatur nesciunt vero excepturi voluptatibus cumque vitae. </p>
+                <p class="bagnere-block-content">
+                    Bienvenue sur mon CV en ligne <br>
+                    Pour plus d'informations n'hésitez pas à me contacter !
+                </p>
             </article>
             <p class="svg">
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -711,95 +716,330 @@
                         <span>Photoshop</span>
                     </div>
                     <div class="skills-group-type-block">
-                        <img src="group.svg" alt="Kaban illustration">
+                        <img src="img/group.svg" alt="Kaban illustration">
                         <span>Kaban</span>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="portfolio">
+        <section id="projects">
             <h2>Mes projets</h2>
-            <article class="portfolio-project">
-                <section class="portfolio-project-container">
-                    <div class="portfolio-project-container-block">
-                        <div class="portfolio-project-container-block-img"></div>
+            <article class="projects-item">
+                <section class="projects-item-container">
+                    <div class="projects-item-container-block">
+                        <div class="projects-item-container-block-img-1"></div>
                     </div>
-                    <h3>First Project</h3>
+                    <div class="projects-item-container-content">
+                        <h3>Weather App</h3>
+                        <p class="projects-item-container-content-group">
+                            <a class="projects-item-container-content-group-link" href="https://mathieubesson-weatherapp.netlify.app/" target="_blank">
+                                <i class="mdi mdi-web"></i>
+                            </a>
+                            <a class="projects-item-container-content-group-link" href="https://github.com/MathieuBesson/weatherApp" target="_blank">
+                                <i class="devicon-github-plain"></i>
+                            </a>
+                        </p>
+                    </div>
                 </section>
-                <section class="portfolio-project-container">
-                    <div class="portfolio-project-container-block">
-                        <div class="portfolio-project-container-block-img"></div>
+                <section class="projects-item-container">
+                    <div class="projects-item-container-block">
+                        <div class="projects-item-container-block-img-2"></div>
                     </div>
-                    <h3>First Project</h3>
+                    <div class="projects-item-container-content">
+                        <h3>Charriot Breton</h3>
+                        <p class="projects-item-container-content-group">
+                            <a class="projects-item-container-content-group-link" href="https://chariot-breton.netlify.app/" target="_blank">
+                                <i class="mdi mdi-web"></i>
+                            </a>
+                            <a class="projects-item-container-content-group-link" href="https://github.com/MathieuBesson/ChariotBreton" target="_blank">
+                                <i class="devicon-github-plain"></i>
+                            </a>
+                        </p>
+                    </div>
                 </section>
-                <section class="portfolio-project-container">
-                    <div class="portfolio-project-container-block">
-                        <div class="portfolio-project-container-block-img"></div>
+                <section class="projects-item-container">
+                    <div class="projects-item-container-block">
+                        <div class="projects-item-container-block-img-3"></div>
                     </div>
-                    <h3>First Project</h3>
+                    <div class="projects-item-container-content">
+                        <h3>Morpion</h3>
+                        <p class="projects-item-container-content-group">
+                            <a class="projects-item-container-content-group-link" href="https://mathieubesson-morpion.netlify.app/" target="_blank">
+                                <i class="mdi mdi-web"></i>
+                            </a>
+                            <a class="projects-item-container-content-group-link" href="https://github.com/MathieuBesson/morpion" target="_blank">
+                                <i class="devicon-github-plain"></i>
+                            </a>
+                        </p>
+                    </div>
                 </section>
-                <section class="portfolio-project-container">
-                    <div class="portfolio-project-container-block">
-                        <div class="portfolio-project-container-block-img"></div>
+                <section class="projects-item-container">
+                    <div class="projects-item-container-block">
+                        <div class="projects-item-container-block-img-4"></div>
                     </div>
-                    <h3>First Project</h3>
+                    <div class="projects-item-container-content">
+                        <h3>Memory</h3>
+                        <p class="projects-item-container-content-group">
+                            <a class="projects-item-container-content-group-link" href="https://mathieubesson-memory.netlify.app/" target="_blank">
+                                <i class="mdi mdi-web"></i>
+                            </a>
+                            <a class="projects-item-container-content-group-link" href="https://github.com/MathieuBesson/memory" target="_blank">
+                                <i class="devicon-github-plain"></i>
+                            </a>
+                        </p>
+                    </div>
                 </section>
-                <section class="portfolio-project-container">
-                    <div class="portfolio-project-container-block">
-                        <div class="portfolio-project-container-block-img"></div>
+                <section class="projects-item-container">
+                    <div class="projects-item-container-block">
+                        <div class="projects-item-container-block-img-5"></div>
                     </div>
-                    <h3>First Project</h3>
+                    <div class="projects-item-container-content">
+                        <h3>Tv App Show</h3>
+                        <p class="projects-item-container-content-group">
+                            <a class="projects-item-container-content-group-link" href="https://github.com/MathieuBesson/tvShowApp" target="_blank">
+                                <i class="devicon-github-plain"></i>
+                            </a>
+                        </p>
+                    </div>
                 </section>
-                <section class="portfolio-project-container">
-                    <div class="portfolio-project-container-block">
-                        <div class="portfolio-project-container-block-img"></div>
+                <section class="projects-item-container">
+                    <div class="projects-item-container-block">
+                        <div class="projects-item-container-block-img-6"></div>
                     </div>
-                    <h3>First Project</h3>
+                    <div class="projects-item-container-content">
+                        <h3>Cuda</h3>
+                        <p class="projects-item-container-content-group">
+                            <a class="projects-item-container-content-group-link" href="https://mathieubesson-cuda.netlify.app/" target="_blank">
+                                <i class="mdi mdi-web"></i>
+                            </a>
+                            <a class="projects-item-container-content-group-link" href="https://github.com/MathieuBesson/cuda" target="_blank">
+                                <i class="devicon-github-plain"></i>
+                            </a>
+                        </p>
+                    </div>
                 </section>
-
-                <section class="portfolio-project-container">
-                    <div class="portfolio-project-container-block">
-                        <div class="portfolio-project-container-block-img"></div>
+                <section class="projects-item-container">
+                    <div class="projects-item-container-block">
+                        <div class="projects-item-container-block-img-7"></div>
                     </div>
-                    <h3>First Project</h3>
-                </section>
-                <section class="portfolio-project-container">
-                    <div class="portfolio-project-container-block">
-                        <div class="portfolio-project-container-block-img"></div>
+                    <div class="projects-item-container-content">
+                        <h3>Blueasy</h3>
+                        <p class="projects-item-container-content-group">
+                            <a class="projects-item-container-content-group-link" href="https://mathieubesson-blueasy.netlify.app/" target="_blank">
+                                <i class="mdi mdi-web"></i>
+                            </a>
+                            <a class="projects-item-container-content-group-link" href="https://github.com/MathieuBesson/blueasy" target="_blank">
+                                <i class="devicon-github-plain"></i>
+                            </a>
+                        </p>
                     </div>
-                    <h3>First Project</h3>
                 </section>
             </article>
         </section>
-        <section id="process">
-            <h2 class="process-title">Parcours</h2>
-            <article>
-
+        <section id="path">
+            <h2 class="path-title">Mon parcours</h2>
+            <article class="path-timeline">
+                <section class="path-timeline-item">
+                    <div class="path-timeline-item-description">
+                        <h3>Stage : Développeur Web chez Web And Cow</h3>
+                        <ul class="path-timeline-item-description-content">
+                            <li>Stage de 2 mois.</li>
+                            <li>Travail sur l'évolution de la plateforme <a
+                                    href="https://code-challenge.webandcow.com/">Code Challenges</a> 
+                                sous CakePHP 2 :</li>
+                            <ul>
+                                <li>Intégration de la nouvelle charte graphique (HTML, CSS, Jquery).</li>
+                                <li>Ajout de fonctionnalités multiples et variées (Back office, visualisation des
+                                    utilisateurs, dashboard des joueurs, édition des challenges…).</li>
+                            </ul>
+                        </ul>
+                        <ul class="path-timeline-item-description-technologies">
+                            <li>
+                                <i class="devicon-cakephp-plain colored"></i>
+                                CakePHP 2
+                            </li>
+                            <li>
+                                <i class="devicon-mysql-plain colored"></i>
+                                MYSQL
+                            </li>
+                            <li>
+                                <i class="devicon-html5-plain colored"></i>
+                                HTML 5
+                            </li>
+                            <li>
+                                <i class="devicon-sass-original colored"></i>
+                                Sass
+                            </li>
+                            <li>
+                                <i class="devicon-bootstrap-plain colored"></i>
+                                Bootsrap
+                            </li>
+                            <li>
+                                <i class="devicon-javascript-plain colored"></i>
+                                Javascript
+                            </li>
+                            <li>
+                                <i class="devicon-jquery-plain colored"></i>
+                                Jquery
+                            </li>
+                            <li>
+                                <i class="devicon-github-plain github"></i>
+                                Github
+                            </li>
+                            <li>
+                                <i class="devicon-sourcetree-plain colored"></i>
+                                Source Tree
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="path-timeline-item-marker"></div>
+                    <p class="path-timeline-item-date">
+                        <em>
+                            <i class="mdi mdi-calendar-month"></i>
+                            Avril 2020 - Juin 2020
+                        </em>
+                    </p>
+                </section>
+                <section class="path-timeline-item">
+                    <div class="path-timeline-item-description">
+                        <h3>My Digital School Rennes :<br> Bachelor Cycle Web et Digital</h3>
+                        <ul class="path-timeline-item-description-content">
+                            <li>Ce bachelor Développeur Web en 3 ans (2 années en initiale avec 16 semaines de stage, 1 année en alternance) permet d'acquérir de nombreuses compétences techniques et relationnelles essentielles en milieu professionnel. <i class="em em-desktop_computer"></i></li>
+                            <li>Cette formation axé autour du mode projet donne l'occasion de développer de nombreux projets web dans leur entièreté, de la conception à l'aboutissement de ceux-ci.</li>
+                            <li>De plus, celle-ci apporte de nombreuses compétences complémentaires tel que le Web Design, le marketing digital, la gestion de projet ou encore le SEO.<i class="em em-loudspeaker"></i><i class="em em-lower_left_crayon" ></i><i class="em em-globe_with_meridians"></i>
+                            </li>
+                        </ul>
+                        <ul class="path-timeline-item-description-technologies">
+                            <li>
+                                <i class="devicon-html5-plain colored"></i>
+                                HTML 5
+                            </li>
+                            <li>
+                                <i class="devicon-css3-plain colored"></i>
+                                CSS 3
+                            </li>
+                            <li>
+                                <i class="devicon-sass-original colored"></i>
+                                Sass
+                            </li>
+                            <li>
+                                <i class="devicon-php-plain colored"></i>
+                                PHP
+                            </li>
+                            <li>
+                                <i class="devicon-javascript-plain colored"></i>
+                                Javascript
+                            </li>
+                            <li>
+                                <i class="devicon-jquery-plain colored"></i>
+                                Jquery
+                            </li>
+                            <li>
+                                <i class="devicon-github-plain"></i>
+                                Github
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="path-timeline-item-marker"></div>
+                    <p class="path-timeline-item-date">
+                        <em>
+                            <i class="mdi mdi-calendar-month"></i>
+                            2019 - 2023
+                        </em>
+                    </p>
+                </section>
+                <section class="path-timeline-item">
+                    <div class="path-timeline-item-description">
+                        <h3>Obtention du baccalauréat</h3>
+                        <ul class="path-timeline-item-description-content">
+                            <li>Filière scientifique <i class="em em-bookmark_tabs" aria-role="presentation"
+                                    aria-label="BOOKMARK TABS"></i></li>
+                            <li>Obtion ISN (Informatique et sciences du numérique)</li>
+                            <li>Mention Bien</li>
+                        </ul>
+                        <ul class="path-timeline-item-description-technologies">
+                            <li>
+                                <i class="devicon-html5-plain colored"></i>
+                                HTML 5
+                            </li>
+                            <li>
+                                <i class="devicon-css3-plain colored"></i>
+                                CSS 3
+                            </li>
+                            <li>
+                                <i class="devicon-java-plain colored"></i>
+                                Java
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="path-timeline-item-marker"></div>
+                    <p class="path-timeline-item-date">
+                        <em>
+                            <i class="mdi mdi-calendar-month"></i>
+                            Juin 2019
+                        </em>
+                    </p>
+                </section>
             </article>
         </section>
-        <section id="process">
-            <h2 class="process-title">Parcours</h2>
-            <article>
-
-            </article>
+        <section id="contact">
+            <h2>Contactez-moi ! </h2>
+            <form action="https://formspree.io/f/mzbkrjjk" method="POST">
+                <div class="contact-personnal-info">
+                    <div class="contact-personnal-info-group">
+                        <label for="name">
+                            Nom
+                        </label>
+                        <input id="name" type="text" name="name">
+                    </div>
+                    <div class="contact-personnal-info-group">
+                        <label for="mail">
+                            Email
+                        </label>
+                        <input id="mail" type="email" name="mail">
+                    </div>
+                </div>
+                <div class="contact-message">
+                    <label for="message">
+                        Message
+                    </label>
+                    <textarea rows="7" id="message" name="message"></textarea>
+                </div>
+                <div class="contact-btn">
+                    <button type="submit">Envoyer !</button>
+                </div>
+            </form>
         </section>
-        <form action="https://formspree.io/f/mzbkrjjk" method="POST">
-            <label>
-                Your email:
-                <input type="text" name="_replyto">
-            </label>
-            <label>
-                Your message:
-                <textarea name="message"></textarea>
-                <textarea name="dfsfdsfs"></textarea>
-                <textarea name="mesfdsfsfsdsage"></textarea>
-            </label>
-
-            <!-- your other form fields go here -->
-
-            <button type="submit">Send</button>
-        </form>
     </main>
+    <footer>
+        <article class="footer-contact">
+            <h2 class="footer-contact-job">Mathieu Besson</h2>
+            <p>
+                <a href="mailto:mathieubesson2001@gmail.com">
+                mathieubesson2001@gmail.com</a>
+            </p>
+            <p>Rennes</p>
+            <p>
+                <a href="tel:+33780379744">07 80 37 97 44</a>
+            </p>
+        </article>
+        <article class="footer-social">
+            <p class="footer-social-job">Développeur Web</p>
+            <p class="footer-social-devicon-group">
+                <a href="https://twitter.com/BessonMathieu3" target="_blank">
+                    <i class="devicon-twitter-plain"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mathieu-besson-rennes/" target="_blank">
+                    <i class="devicon-linkedin-plain"></i>
+                </a>
+                <a href="https://github.com/MathieuBesson" target="_blank">
+                    <i class="devicon-github-plain"></i>
+                </a>
+            </p>
+        </article>
+    </footer>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
 </body>
 
 </html>

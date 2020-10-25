@@ -1,0 +1,58 @@
+#contact {
+    @include currentBg($main-bg-color);
+    .contact-personnal-info {
+        @include flex(space-between);
+        @media screen and (max-width: 800px) {
+            @include flex(space-between, column);
+        }
+    }
+    .contact-personnal-info-group,
+    .contact-message {
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-personnal-info-group {
+        flex: 0 0 45%;
+        min-width: 48%;
+    }
+    input,
+    textarea {
+        background-color: rgba(0, 0, 0, 0.3);
+        border: 0;
+        padding: 15px;
+        margin: 15px 5px;
+        border-radius: 10px;
+        color: white;
+        border: transparent solid 2px;
+        font-size: 15px;
+        &:focus {
+            border: $main-color solid 2px;
+            outline: none;
+        }
+    }
+    label {
+        margin-left: 10px;
+    }
+    .contact-btn {
+        width: 100%;
+        @include flex(center);
+        button {
+            cursor: pointer;
+            font-family: "Segoe UI";
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: 700;
+            background-color: $main-color;
+            padding: 10px 20px;
+            margin-top: 15px;
+            border: 0;
+            border-radius: 25px;
+            color: rgb(3, 5, 20);
+        }
+    }
+
+    // Media Queries
+    @media screen and (max-width: 800px) {
+        .contact-personnal-info {@include flex(space-between, column);}
+    }
+}
