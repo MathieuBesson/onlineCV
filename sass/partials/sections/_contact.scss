@@ -36,19 +36,6 @@
     .contact-btn {
         width: 100%;
         @include flex(center);
-        button {
-            cursor: pointer;
-            font-family: "Segoe UI";
-            text-align: center;
-            text-transform: uppercase;
-            font-weight: 700;
-            background-color: $main-color;
-            padding: 10px 20px;
-            margin-top: 15px;
-            border: 0;
-            border-radius: 25px;
-            color: rgb(3, 5, 20);
-        }
     }
 
     // Media Queries

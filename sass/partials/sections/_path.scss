@@ -17,67 +17,34 @@
         width: 100%;
         &:after {
             @include time-line-marker-dim(30px, 30px, calc(50% - 14px), 50%);
-            @media screen and (max-width: 1400px) {
-                left: 0;
-            }
         }
         &:before {
-            @include time-line-marker-dim(3px, 100%, 50%, 100%);
-            @media screen and (max-width: 1400px) {
-                left: 13px;
-            }
-        }
-
-        @media screen and (max-width: 1400px) {
-            padding-left: 55px;
-            @include flex(flex-end, column-reverse);
-            align-items: flex-start;
-            .path-timeline-item-description {margin-top: 45px;}
-            em:before {border-width: 0;}
-        }
-        @media screen and (max-width: 525px) {
-            padding-left: 0px;
-            text-align: left;
-            &:before, &:after{display: none;}
-            .path-timeline-item-description,
-            .path-timeline-item-date em {padding: 7%;}
-            .path-timeline-item-date{
-                font-size: 14px;
-                width: 100%;
-            }
+            @include time-line-marker-dim(3px, 100%, 50%, 25px);
         }
     }
 
-    // fleche vers gauche
     .path-timeline-item:nth-child(even) {
         @include flex(space-evenly, row-reverse);
         position: relative;
-        em:before {@include arrow-direction(left);}
-        .path-timeline-item-date {text-align: right;}
-
-        @media screen and (max-width: 1400px) {
-            @include flex(flex-end, column-reverse);
-            align-items: flex-start;
-            .path-timeline-item-description {margin-top: 45px;}
-            em:before {border-width: 0;}
-            .path-timeline-item-date {text-align: left;}
+        em:before {
+            @include arrow-direction(left);
+        }
+        .path-timeline-item-date {
+            text-align: right;
         }
     }
 
     .path-timeline-item:nth-child(odd) {
         @include flex(space-evenly);
-        em:before {@include arrow-direction(right);}
-
-        @media screen and (max-width: 1400px) {
-            @include flex(flex-end, column-reverse);
-            align-items: flex-start;
-            .path-timeline-item-description {margin-top: 45px;}
-            em:before {border-width: 0;}
+        em:before {
+            @include arrow-direction(right);
         }
     }
 
     .path-timeline-item-description,
-    .path-timeline-item-date {flex: 0 0 40%;}
+    .path-timeline-item-date {
+        flex: 0 0 40%;
+    }
 
     .path-timeline-item-description,
     .path-timeline-item-date em {
@@ -88,14 +55,23 @@
 
     .path-timeline-item-date {
         text-transform: uppercase;
-        i{font-size: 20px; color: $main-color}
+        i {
+            font-size: 20px;
+            color: $main-color;
+        }
     }
 
-    a {color: $main-color;}
+    .path-timeline-item-description h4{
+        font-size: 15px;
+        color: $main-color;
+        margin-bottom:15px ;
+    }
 
     .path-timeline-item-description-content > ul {
         margin-left: 10%;
-        li::before{content: "\F0DBB";}
+        li::before {
+            content: "\F0DBB";
+        }
     }
 
     .path-timeline-item-description-technologies {
@@ -112,11 +88,16 @@
             @extend %bounce-effect;
             cursor: pointer;
         }
-
     }
 
     .path-timeline-item-description-content li {
         margin-bottom: 10px;
+        .em {
+            height: 1.3em;
+        }
+        a {
+            color: $main-color;
+        }
         &::before {
             color: $main-color;
             content: "\F013E";
@@ -124,7 +105,52 @@
             margin-right: 5px;
         }
     }
-    i{margin: 0 5px;}
 
-    .em{height:1.3em;}
+    i {
+        margin: 0 5px;
+    }
+
+    .path-timeline-item {
+        @media screen and (max-width: 1400px) {
+            padding-left: 55px;
+            &:after {
+                left: 0;
+            }
+            &:before {
+                left: 13px;
+            }
+            &:nth-child(even), &:nth-child(odd){
+                @include flex(flex-end, column-reverse);
+                align-items: flex-start;
+                .path-timeline-item-description {
+                    margin-top: 45px;
+                }
+                em:before {
+                    border-width: 0;
+                }
+            }
+            &:nth-child(even) {
+                .path-timeline-item-date {
+                    text-align: left;
+                }
+            }
+        }
+
+        @media screen and (max-width: 525px) {
+            padding-left: 0px;
+            text-align: left;
+            &:before,
+            &:after {
+                display: none;
+            }
+            .path-timeline-item-description,
+            .path-timeline-item-date em {
+                padding: 7%;
+            }
+            .path-timeline-item-date {
+                font-size: 14px;
+                width: 100%;
+            }
+        }
+    }
 }

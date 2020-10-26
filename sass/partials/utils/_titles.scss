@@ -24,6 +24,27 @@ h3 {font-size: 1.8em;
     font-weight: 700;
 }
 
+button {
+    cursor: pointer;
+    outline-style : none;
+    font-family: "Segoe UI";
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: transparent;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border: 2px solid $main-color;
+    border-radius: 25px;
+    color: $main-color;
+    font-size: 15px;
+    transition: all .3s ease;
+    &:hover{
+        background-color: $main-color;
+        color:#0E0A30;
+    }
+}
+
 
 // Media Queries
 @media screen and (max-width: 525px){

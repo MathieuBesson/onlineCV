@@ -32,8 +32,8 @@ h2, h3 {
 
 h2 {
   font-size: 2.3em;
-  background: -webkit-gradient(linear, right top, left top, from(#F7685B), color-stop(#FF3C5F), color-stop(#885AF8), to(#109CF1));
-  background: linear-gradient(-90deg, #F7685B, #FF3C5F, #885AF8, #109CF1);
+  background: -webkit-gradient(linear, right top, left top, from(#e95b4e), color-stop(#cc9602), to(#e93253));
+  background: linear-gradient(-90deg, #e95b4e, #cc9602, #e93253);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 400% 400%;
@@ -47,6 +47,29 @@ h3 {
   font-weight: 700;
 }
 
+button {
+  cursor: pointer;
+  outline-style: none;
+  font-family: "Segoe UI";
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-color: transparent;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border: 2px solid #3CCFCF;
+  border-radius: 25px;
+  color: #3CCFCF;
+  font-size: 15px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+button:hover {
+  background-color: #3CCFCF;
+  color: #0E0A30;
+}
+
 @media screen and (max-width: 525px) {
   h2 {
     font-size: 1.9em;
@@ -56,7 +79,7 @@ h3 {
   }
 }
 
-header .menu, header .menu-name, header .menu-list, header .bagnere, #skills .skills-group, #skills .skills-group-type, #skills .skills-group-type-block, #projects .projects-item, #projects .projects-item-container-content-group, #path .path-timeline-item, #path .path-timeline-item:nth-child(even), #path .path-timeline-item:nth-child(odd), #path .path-timeline-item-description-technologies, #contact .contact-personnal-info, #contact .contact-btn, footer {
+header .menu, header .menu-name, header .menu-list, header .bagnere, #skills .skills-group, #skills .skills-group-type, #skills .skills-group-type-block, #projects .projects-item, #projects .projects-item-container-content-group, #path .path-timeline-item:nth-child(even), #path .path-timeline-item:nth-child(odd), #path .path-timeline-item-description-technologies, #contact .contact-personnal-info, #contact .contact-btn, footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -872,6 +895,7 @@ header .bagnere-block {
 header .bagnere-block-content {
   line-height: 1.8em;
   width: 100%;
+  margin-bottom: 35px;
 }
 
 header .bagnere .svg {
@@ -1190,64 +1214,12 @@ header .bagnere-block-text-typing-title {
   background-color: #fff;
 }
 
-@media screen and (max-width: 1400px) {
-  #path .path-timeline-item:after {
-    left: 0;
-  }
-}
-
 #path .path-timeline-item:before {
   width: 3px;
   height: 100%;
   left: 50%;
-  border-radius: 100%;
+  border-radius: 25px;
   background-color: #fff;
-}
-
-@media screen and (max-width: 1400px) {
-  #path .path-timeline-item:before {
-    left: 13px;
-  }
-}
-
-@media screen and (max-width: 1400px) {
-  #path .path-timeline-item {
-    padding-left: 55px;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  #path .path-timeline-item .path-timeline-item-description {
-    margin-top: 45px;
-  }
-  #path .path-timeline-item em:before {
-    border-width: 0;
-  }
-}
-
-@media screen and (max-width: 525px) {
-  #path .path-timeline-item {
-    padding-left: 0px;
-    text-align: left;
-  }
-  #path .path-timeline-item:before, #path .path-timeline-item:after {
-    display: none;
-  }
-  #path .path-timeline-item .path-timeline-item-description,
-  #path .path-timeline-item .path-timeline-item-date em {
-    padding: 7%;
-  }
-  #path .path-timeline-item .path-timeline-item-date {
-    font-size: 14px;
-    width: 100%;
-  }
 }
 
 #path .path-timeline-item:nth-child(even) {
@@ -1271,30 +1243,6 @@ header .bagnere-block-text-typing-title {
   text-align: right;
 }
 
-@media screen and (max-width: 1400px) {
-  #path .path-timeline-item:nth-child(even) {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  #path .path-timeline-item:nth-child(even) .path-timeline-item-description {
-    margin-top: 45px;
-  }
-  #path .path-timeline-item:nth-child(even) em:before {
-    border-width: 0;
-  }
-  #path .path-timeline-item:nth-child(even) .path-timeline-item-date {
-    text-align: left;
-  }
-}
-
 #path .path-timeline-item:nth-child(odd) {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
@@ -1309,27 +1257,6 @@ header .bagnere-block-text-typing-title {
   border-width: 16.5px 19px 16.5px 0px;
   border-color: transparent #352885 transparent transparent;
   right: 45.6%;
-}
-
-@media screen and (max-width: 1400px) {
-  #path .path-timeline-item:nth-child(odd) {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-  }
-  #path .path-timeline-item:nth-child(odd) .path-timeline-item-description {
-    margin-top: 45px;
-  }
-  #path .path-timeline-item:nth-child(odd) em:before {
-    border-width: 0;
-  }
 }
 
 #path .path-timeline-item-description,
@@ -1355,8 +1282,10 @@ header .bagnere-block-text-typing-title {
   color: #3CCFCF;
 }
 
-#path a {
+#path .path-timeline-item-description h4 {
+  font-size: 15px;
   color: #3CCFCF;
+  margin-bottom: 15px;
 }
 
 #path .path-timeline-item-description-content > ul {
@@ -1393,6 +1322,14 @@ header .bagnere-block-text-typing-title {
   margin-bottom: 10px;
 }
 
+#path .path-timeline-item-description-content li .em {
+  height: 1.3em;
+}
+
+#path .path-timeline-item-description-content li a {
+  color: #3CCFCF;
+}
+
 #path .path-timeline-item-description-content li::before {
   color: #3CCFCF;
   content: "\F013E";
@@ -1404,8 +1341,55 @@ header .bagnere-block-text-typing-title {
   margin: 0 5px;
 }
 
-#path .em {
-  height: 1.3em;
+@media screen and (max-width: 1400px) {
+  #path .path-timeline-item {
+    padding-left: 55px;
+  }
+  #path .path-timeline-item:after {
+    left: 0;
+  }
+  #path .path-timeline-item:before {
+    left: 13px;
+  }
+  #path .path-timeline-item:nth-child(even), #path .path-timeline-item:nth-child(odd) {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #path .path-timeline-item:nth-child(even) .path-timeline-item-description, #path .path-timeline-item:nth-child(odd) .path-timeline-item-description {
+    margin-top: 45px;
+  }
+  #path .path-timeline-item:nth-child(even) em:before, #path .path-timeline-item:nth-child(odd) em:before {
+    border-width: 0;
+  }
+  #path .path-timeline-item:nth-child(even) .path-timeline-item-date {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  #path .path-timeline-item {
+    padding-left: 0px;
+    text-align: left;
+  }
+  #path .path-timeline-item:before, #path .path-timeline-item:after {
+    display: none;
+  }
+  #path .path-timeline-item .path-timeline-item-description,
+  #path .path-timeline-item .path-timeline-item-date em {
+    padding: 7%;
+  }
+  #path .path-timeline-item .path-timeline-item-date {
+    font-size: 14px;
+    width: 100%;
+  }
 }
 
 #contact {
@@ -1485,20 +1469,6 @@ header .bagnere-block-text-typing-title {
           flex-direction: row;
 }
 
-#contact .contact-btn button {
-  cursor: pointer;
-  font-family: "Segoe UI";
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: 700;
-  background-color: #3CCFCF;
-  padding: 10px 20px;
-  margin-top: 15px;
-  border: 0;
-  border-radius: 25px;
-  color: #030514;
-}
-
 @media screen and (max-width: 800px) {
   #contact .contact-personnal-info {
     -webkit-box-pack: justify;
@@ -1556,5 +1526,19 @@ footer .footer-social-devicon-group {
 
 main > section, footer {
   padding: 75px 15%;
+}
+
+@media screen and (max-width: 550px) {
+  main > section, footer {
+    padding: 75px 10%;
+  }
+}
+
+p {
+  font-size: 18px;
+}
+
+a {
+  color: #3CCFCF;
 }
 /*# sourceMappingURL=main.css.map */

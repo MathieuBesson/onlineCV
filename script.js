@@ -9,9 +9,9 @@ window.onload = () => {
     
     typewriter
       .pauseFor(1000)
-      .typeString('Développeur Web <i class="em em-rocket"></i>')
+      .typeString('Développeur Web Junior <i class="em em-rocket"></i>')
       .pauseFor(5000)
-      .deleteChars(16)
+      .deleteChars(23)
       .typeString('À votre service ! <i class="em em-spock-hand"></i>')
       .pauseFor(5000)
       .start();
