@@ -28,6 +28,17 @@ window.onload = () => {
 			item.classList.add('active')
         });
     });
-    console.log(menuList);
+    ScrollReveal().reveal('.btn-effect', {origin: 'bottom', delay: 900, duration: 1000, reset: true});
+
+    ScrollReveal().reveal('.skills-group-type', { interval: 900, origin: 'right', distance: '500px', reset: false});
+
+    ScrollReveal().reveal('.projects-item-container', { interval: 500, origin: 'bottom', reset: false});
+
+    ScrollReveal().reveal('.path-timeline-item-date', { delay: 400, origin: 'bottom', reset: false});
+
+    ScrollReveal().reveal('.path-timeline-item-description', { delay: 900, origin: 'bottom', distance : '200px', reset: false});
+
+    ScrollReveal().reveal('.footer-social [class^=devicon]', { interval: 400, origin: 'right', distance: '500px', reset : true});
+    
 }
 
