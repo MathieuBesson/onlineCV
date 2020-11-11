@@ -2,9 +2,6 @@
     @include currentBg($main-bg-color);
     .contact-personnal-info {
         @include flex(space-between);
-        @media screen and (max-width: 800px) {
-            @include flex(space-between, column);
-        }
     }
     .contact-personnal-info-group,
     .contact-message {
