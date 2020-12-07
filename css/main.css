@@ -790,6 +790,11 @@ header .bagnere-block-text-typing-title {
   background-size: cover;
 }
 
+#projects .projects-item-container-block-img-9 {
+  background: url("../img/project9.jpg") center center no-repeat;
+  background-size: cover;
+}
+
 #projects .projects-item-container {
   position: relative;
   display: flex;
