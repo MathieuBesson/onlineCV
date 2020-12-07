@@ -38,7 +38,7 @@ window.onload = () => {
 
     ScrollReveal().reveal('.path-timeline-item-description', { delay: 900, origin: 'bottom', distance : '200px', reset: false});
 
-    ScrollReveal().reveal('.footer-social [class^=devicon]', { interval: 400, origin: 'right', distance: '500px', reset : true});
+    ScrollReveal().reveal('.footer-social [class^=mdi]', { interval: 400, origin: 'right', distance: '500px', reset : true});
     
 }
 

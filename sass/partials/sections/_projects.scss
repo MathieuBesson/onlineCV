@@ -19,7 +19,7 @@
         height: 100%;
         filter: brightness(0.35);
     }
-    @for $var from 1 through 7 {
+    @for $var from 1 through 8 {
         .projects-item-container-block-img-#{$var} {
             @include bg-cover("../img/project#{$var}.jpg");
         }

@@ -7,14 +7,11 @@ body {
 }
 
 *, ::before, ::after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   list-style: none;
-  -webkit-hyphens: none;
-      -ms-hyphens: none;
-          hyphens: none;
+  hyphens: none;
   scroll-behavior: smooth;
   text-decoration: none;
 }
@@ -32,12 +29,10 @@ h2, h3 {
 
 h2 {
   font-size: 2.3em;
-  background: -webkit-gradient(linear, right top, left top, from(#e95b4e), color-stop(#cc9602), to(#e93253));
   background: linear-gradient(-90deg, #e95b4e, #cc9602, #e93253);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 400% 400%;
-  -webkit-animation: gradientBG 30s ease-in-out infinite;
   animation: gradientBG 30s ease-in-out infinite;
 }
 
@@ -61,7 +56,6 @@ button {
   border-radius: 25px;
   color: #3CCFCF;
   font-size: 15px;
-  -webkit-transition: all .3s ease;
   transition: all .3s ease;
 }
 
@@ -80,431 +74,320 @@ button:hover {
 }
 
 header .menu, header .menu-name, header .menu-list, header .bagnere, #skills .skills-group, #skills .skills-group-type, #skills .skills-group-type-block, #projects .projects-item, #projects .projects-item-container-content-group, #path .path-timeline-item:nth-child(even), #path .path-timeline-item:nth-child(odd), #path .path-timeline-item-description-technologies, #contact .contact-personnal-info, #contact .contact-btn, footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 header .bagnere .svg svg .animate {
-  -webkit-animation: float 6s ease-in-out infinite;
-          animation: float 6s ease-in-out infinite;
-}
-
-@-webkit-keyframes float {
-  0% {
-    -webkit-transform: translatey(0);
-            transform: translatey(0);
-  }
-  50% {
-    -webkit-transform: translatey(-7px);
-            transform: translatey(-7px);
-  }
-  100% {
-    -webkit-transform: translatey(0);
-            transform: translatey(0);
-  }
+  animation: float 6s ease-in-out infinite;
 }
 
 @keyframes float {
   0% {
-    -webkit-transform: translatey(0);
-            transform: translatey(0);
+    transform: translatey(0);
   }
   50% {
-    -webkit-transform: translatey(-7px);
-            transform: translatey(-7px);
+    transform: translatey(-7px);
   }
   100% {
-    -webkit-transform: translatey(0);
-            transform: translatey(0);
+    transform: translatey(0);
   }
 }
 
 header .bagnere .svg svg .animate-reverse {
-  -webkit-animation: float-reverse 6s ease-in-out infinite;
-          animation: float-reverse 6s ease-in-out infinite;
-}
-
-@-webkit-keyframes float-reverse {
-  0% {
-    -webkit-transform: translatey(0);
-            transform: translatey(0);
-  }
-  50% {
-    -webkit-transform: translatey(7px);
-            transform: translatey(7px);
-  }
-  100% {
-    -webkit-transform: translatey(0);
-            transform: translatey(0);
-  }
+  animation: float-reverse 6s ease-in-out infinite;
 }
 
 @keyframes float-reverse {
   0% {
-    -webkit-transform: translatey(0);
-            transform: translatey(0);
+    transform: translatey(0);
   }
   50% {
-    -webkit-transform: translatey(7px);
-            transform: translatey(7px);
+    transform: translatey(7px);
   }
   100% {
-    -webkit-transform: translatey(0);
-            transform: translatey(0);
+    transform: translatey(0);
   }
 }
 
 header .bagnere .svg svg .animate-coffee {
-  -webkit-animation: coffee 10s infinite;
-          animation: coffee 10s infinite;
+  animation: coffee 10s infinite;
 }
 
 header .bagnere .svg svg .animate-coffee-support {
-  -webkit-animation: coffee-support 10s infinite;
-          animation: coffee-support 10s infinite;
+  animation: coffee-support 10s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(0) {
-  -webkit-animation: fadein 20s 0s infinite;
-          animation: fadein 20s 0s infinite;
+  animation: fadein 20s 0s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(1) {
-  -webkit-animation: fadein 20s 0.1s infinite;
-          animation: fadein 20s 0.1s infinite;
+  animation: fadein 20s 0.1s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(2) {
-  -webkit-animation: fadein 20s 0.2s infinite;
-          animation: fadein 20s 0.2s infinite;
+  animation: fadein 20s 0.2s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(3) {
-  -webkit-animation: fadein 20s 0.3s infinite;
-          animation: fadein 20s 0.3s infinite;
+  animation: fadein 20s 0.3s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(4) {
-  -webkit-animation: fadein 20s 0.4s infinite;
-          animation: fadein 20s 0.4s infinite;
+  animation: fadein 20s 0.4s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(5) {
-  -webkit-animation: fadein 20s 0.5s infinite;
-          animation: fadein 20s 0.5s infinite;
+  animation: fadein 20s 0.5s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(6) {
-  -webkit-animation: fadein 20s 0.6s infinite;
-          animation: fadein 20s 0.6s infinite;
+  animation: fadein 20s 0.6s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(7) {
-  -webkit-animation: fadein 20s 0.7s infinite;
-          animation: fadein 20s 0.7s infinite;
+  animation: fadein 20s 0.7s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(8) {
-  -webkit-animation: fadein 20s 0.8s infinite;
-          animation: fadein 20s 0.8s infinite;
+  animation: fadein 20s 0.8s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(9) {
-  -webkit-animation: fadein 20s 0.9s infinite;
-          animation: fadein 20s 0.9s infinite;
+  animation: fadein 20s 0.9s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(10) {
-  -webkit-animation: fadein 20s 1s infinite;
-          animation: fadein 20s 1s infinite;
+  animation: fadein 20s 1s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(11) {
-  -webkit-animation: fadein 20s 1.1s infinite;
-          animation: fadein 20s 1.1s infinite;
+  animation: fadein 20s 1.1s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(12) {
-  -webkit-animation: fadein 20s 1.2s infinite;
-          animation: fadein 20s 1.2s infinite;
+  animation: fadein 20s 1.2s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(13) {
-  -webkit-animation: fadein 20s 1.3s infinite;
-          animation: fadein 20s 1.3s infinite;
+  animation: fadein 20s 1.3s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(14) {
-  -webkit-animation: fadein 20s 1.4s infinite;
-          animation: fadein 20s 1.4s infinite;
+  animation: fadein 20s 1.4s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(15) {
-  -webkit-animation: fadein 20s 1.5s infinite;
-          animation: fadein 20s 1.5s infinite;
+  animation: fadein 20s 1.5s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(16) {
-  -webkit-animation: fadein 20s 1.6s infinite;
-          animation: fadein 20s 1.6s infinite;
+  animation: fadein 20s 1.6s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(17) {
-  -webkit-animation: fadein 20s 1.7s infinite;
-          animation: fadein 20s 1.7s infinite;
+  animation: fadein 20s 1.7s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(18) {
-  -webkit-animation: fadein 20s 1.8s infinite;
-          animation: fadein 20s 1.8s infinite;
+  animation: fadein 20s 1.8s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(19) {
-  -webkit-animation: fadein 20s 1.9s infinite;
-          animation: fadein 20s 1.9s infinite;
+  animation: fadein 20s 1.9s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(20) {
-  -webkit-animation: fadein 20s 2s infinite;
-          animation: fadein 20s 2s infinite;
+  animation: fadein 20s 2s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(21) {
-  -webkit-animation: fadein 20s 2.1s infinite;
-          animation: fadein 20s 2.1s infinite;
+  animation: fadein 20s 2.1s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(22) {
-  -webkit-animation: fadein 20s 2.2s infinite;
-          animation: fadein 20s 2.2s infinite;
+  animation: fadein 20s 2.2s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(23) {
-  -webkit-animation: fadein 20s 2.3s infinite;
-          animation: fadein 20s 2.3s infinite;
+  animation: fadein 20s 2.3s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(24) {
-  -webkit-animation: fadein 20s 2.4s infinite;
-          animation: fadein 20s 2.4s infinite;
+  animation: fadein 20s 2.4s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(25) {
-  -webkit-animation: fadein 20s 2.5s infinite;
-          animation: fadein 20s 2.5s infinite;
+  animation: fadein 20s 2.5s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(26) {
-  -webkit-animation: fadein 20s 2.6s infinite;
-          animation: fadein 20s 2.6s infinite;
+  animation: fadein 20s 2.6s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(27) {
-  -webkit-animation: fadein 20s 2.7s infinite;
-          animation: fadein 20s 2.7s infinite;
+  animation: fadein 20s 2.7s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(28) {
-  -webkit-animation: fadein 20s 2.8s infinite;
-          animation: fadein 20s 2.8s infinite;
+  animation: fadein 20s 2.8s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(29) {
-  -webkit-animation: fadein 20s 2.9s infinite;
-          animation: fadein 20s 2.9s infinite;
+  animation: fadein 20s 2.9s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(30) {
-  -webkit-animation: fadein 20s 3s infinite;
-          animation: fadein 20s 3s infinite;
+  animation: fadein 20s 3s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(31) {
-  -webkit-animation: fadein 20s 3.1s infinite;
-          animation: fadein 20s 3.1s infinite;
+  animation: fadein 20s 3.1s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(32) {
-  -webkit-animation: fadein 20s 3.2s infinite;
-          animation: fadein 20s 3.2s infinite;
+  animation: fadein 20s 3.2s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(33) {
-  -webkit-animation: fadein 20s 3.3s infinite;
-          animation: fadein 20s 3.3s infinite;
+  animation: fadein 20s 3.3s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(34) {
-  -webkit-animation: fadein 20s 3.4s infinite;
-          animation: fadein 20s 3.4s infinite;
+  animation: fadein 20s 3.4s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(35) {
-  -webkit-animation: fadein 20s 3.5s infinite;
-          animation: fadein 20s 3.5s infinite;
+  animation: fadein 20s 3.5s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(36) {
-  -webkit-animation: fadein 20s 3.6s infinite;
-          animation: fadein 20s 3.6s infinite;
+  animation: fadein 20s 3.6s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(37) {
-  -webkit-animation: fadein 20s 3.7s infinite;
-          animation: fadein 20s 3.7s infinite;
+  animation: fadein 20s 3.7s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(38) {
-  -webkit-animation: fadein 20s 3.8s infinite;
-          animation: fadein 20s 3.8s infinite;
+  animation: fadein 20s 3.8s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(39) {
-  -webkit-animation: fadein 20s 3.9s infinite;
-          animation: fadein 20s 3.9s infinite;
+  animation: fadein 20s 3.9s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(40) {
-  -webkit-animation: fadein 20s 4s infinite;
-          animation: fadein 20s 4s infinite;
+  animation: fadein 20s 4s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(41) {
-  -webkit-animation: fadein 20s 4.1s infinite;
-          animation: fadein 20s 4.1s infinite;
+  animation: fadein 20s 4.1s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(42) {
-  -webkit-animation: fadein 20s 4.2s infinite;
-          animation: fadein 20s 4.2s infinite;
+  animation: fadein 20s 4.2s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(43) {
-  -webkit-animation: fadein 20s 4.3s infinite;
-          animation: fadein 20s 4.3s infinite;
+  animation: fadein 20s 4.3s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(44) {
-  -webkit-animation: fadein 20s 4.4s infinite;
-          animation: fadein 20s 4.4s infinite;
+  animation: fadein 20s 4.4s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(45) {
-  -webkit-animation: fadein 20s 4.5s infinite;
-          animation: fadein 20s 4.5s infinite;
+  animation: fadein 20s 4.5s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(46) {
-  -webkit-animation: fadein 20s 4.6s infinite;
-          animation: fadein 20s 4.6s infinite;
+  animation: fadein 20s 4.6s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(47) {
-  -webkit-animation: fadein 20s 4.7s infinite;
-          animation: fadein 20s 4.7s infinite;
+  animation: fadein 20s 4.7s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(48) {
-  -webkit-animation: fadein 20s 4.8s infinite;
-          animation: fadein 20s 4.8s infinite;
+  animation: fadein 20s 4.8s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(49) {
-  -webkit-animation: fadein 20s 4.9s infinite;
-          animation: fadein 20s 4.9s infinite;
+  animation: fadein 20s 4.9s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(50) {
-  -webkit-animation: fadein 20s 5s infinite;
-          animation: fadein 20s 5s infinite;
+  animation: fadein 20s 5s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(51) {
-  -webkit-animation: fadein 20s 5.1s infinite;
-          animation: fadein 20s 5.1s infinite;
+  animation: fadein 20s 5.1s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(52) {
-  -webkit-animation: fadein 20s 5.2s infinite;
-          animation: fadein 20s 5.2s infinite;
+  animation: fadein 20s 5.2s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(53) {
-  -webkit-animation: fadein 20s 5.3s infinite;
-          animation: fadein 20s 5.3s infinite;
+  animation: fadein 20s 5.3s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(54) {
-  -webkit-animation: fadein 20s 5.4s infinite;
-          animation: fadein 20s 5.4s infinite;
+  animation: fadein 20s 5.4s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(55) {
-  -webkit-animation: fadein 20s 5.5s infinite;
-          animation: fadein 20s 5.5s infinite;
+  animation: fadein 20s 5.5s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(56) {
-  -webkit-animation: fadein 20s 5.6s infinite;
-          animation: fadein 20s 5.6s infinite;
+  animation: fadein 20s 5.6s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(57) {
-  -webkit-animation: fadein 20s 5.7s infinite;
-          animation: fadein 20s 5.7s infinite;
+  animation: fadein 20s 5.7s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(58) {
-  -webkit-animation: fadein 20s 5.8s infinite;
-          animation: fadein 20s 5.8s infinite;
+  animation: fadein 20s 5.8s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(59) {
-  -webkit-animation: fadein 20s 5.9s infinite;
-          animation: fadein 20s 5.9s infinite;
+  animation: fadein 20s 5.9s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(60) {
-  -webkit-animation: fadein 20s 6s infinite;
-          animation: fadein 20s 6s infinite;
+  animation: fadein 20s 6s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(61) {
-  -webkit-animation: fadein 20s 6.1s infinite;
-          animation: fadein 20s 6.1s infinite;
+  animation: fadein 20s 6.1s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(62) {
-  -webkit-animation: fadein 20s 6.2s infinite;
-          animation: fadein 20s 6.2s infinite;
+  animation: fadein 20s 6.2s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(63) {
-  -webkit-animation: fadein 20s 6.3s infinite;
-          animation: fadein 20s 6.3s infinite;
+  animation: fadein 20s 6.3s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(64) {
-  -webkit-animation: fadein 20s 6.4s infinite;
-          animation: fadein 20s 6.4s infinite;
+  animation: fadein 20s 6.4s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(65) {
-  -webkit-animation: fadein 20s 6.5s infinite;
-          animation: fadein 20s 6.5s infinite;
+  animation: fadein 20s 6.5s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(66) {
-  -webkit-animation: fadein 20s 6.6s infinite;
-          animation: fadein 20s 6.6s infinite;
+  animation: fadein 20s 6.6s infinite;
 }
 
 header .bagnere .svg svg .code polygon:nth-child(67) {
-  -webkit-animation: fadein 20s 6.7s infinite;
-          animation: fadein 20s 6.7s infinite;
+  animation: fadein 20s 6.7s infinite;
 }
 
 #path .path-timeline-item:nth-child(even) em:before, #path .path-timeline-item:nth-child(odd) em:before, #path .path-timeline-item:after, #path .path-timeline-item:before {
@@ -516,14 +399,11 @@ header .bagnere .svg svg .code polygon:nth-child(67) {
   width: 0;
   height: 0;
   border-style: solid;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
 
 #path .path-timeline-item-description-technologies li:hover {
-  -webkit-animation: 1.5s bounce ease;
-          animation: 1.5s bounce ease;
+  animation: 1.5s bounce ease;
 }
 
 header .menu-list-item:after, header .menu-list-item.active:after, header .menu-list-item:before, header .menu-list-item.active:before {
@@ -533,144 +413,53 @@ header .menu-list-item:after, header .menu-list-item.active:after, header .menu-
   height: 3px;
   background-color: #3CCFCF;
   position: absolute;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-}
-
-@-webkit-keyframes fadein {
-  0% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-    opacity: 0;
-  }
-  40% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-    opacity: 1;
-  }
-  65% {
-    opacity: 1;
-    -webkit-transform: translate(55px, -20px);
-            transform: translate(55px, -20px);
-  }
-  99% {
-    opacity: 1;
-    -webkit-transform: translate(55px, -20px);
-            transform: translate(55px, -20px);
-  }
-  100% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-    opacity: 0;
-  }
 }
 
 @keyframes fadein {
   0% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
     opacity: 0;
   }
   40% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
     opacity: 1;
   }
   65% {
     opacity: 1;
-    -webkit-transform: translate(55px, -20px);
-            transform: translate(55px, -20px);
+    transform: translate(55px, -20px);
   }
   99% {
     opacity: 1;
-    -webkit-transform: translate(55px, -20px);
-            transform: translate(55px, -20px);
+    transform: translate(55px, -20px);
   }
   100% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
     opacity: 0;
-  }
-}
-
-@-webkit-keyframes coffee {
-  0% {
-    -webkit-transform: translate(0) scale(0.75);
-            transform: translate(0) scale(0.75);
-  }
-  40% {
-    -webkit-transform: translate(40px, 40px) scale(0.75);
-            transform: translate(40px, 40px) scale(0.75);
-  }
-  100% {
-    -webkit-transform: translate(0) scale(0.75);
-            transform: translate(0) scale(0.75);
   }
 }
 
 @keyframes coffee {
   0% {
-    -webkit-transform: translate(0) scale(0.75);
-            transform: translate(0) scale(0.75);
+    transform: translate(0) scale(0.75);
   }
   40% {
-    -webkit-transform: translate(40px, 40px) scale(0.75);
-            transform: translate(40px, 40px) scale(0.75);
+    transform: translate(40px, 40px) scale(0.75);
   }
   100% {
-    -webkit-transform: translate(0) scale(0.75);
-            transform: translate(0) scale(0.75);
-  }
-}
-
-@-webkit-keyframes coffee-support {
-  0% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-  40% {
-    -webkit-transform: translate(40px, 40px);
-            transform: translate(40px, 40px);
-  }
-  100% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0) scale(0.75);
   }
 }
 
 @keyframes coffee-support {
   0% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
   }
   40% {
-    -webkit-transform: translate(40px, 40px);
-            transform: translate(40px, 40px);
+    transform: translate(40px, 40px);
   }
   100% {
-    -webkit-transform: translate(0);
-            transform: translate(0);
-  }
-}
-
-@-webkit-keyframes anim-gradient {
-  0% {
-    color: white;
-  }
-  16.667% {
-    color: white;
-  }
-  33.333% {
-    color: transparent;
-  }
-  50% {
-    color: transparent;
-  }
-  66.667% {
-    color: transparent;
-  }
-  100% {
-    color: white;
+    transform: translate(0);
   }
 }
 
@@ -695,18 +484,6 @@ header .menu-list-item:after, header .menu-list-item.active:after, header .menu-
   }
 }
 
-@-webkit-keyframes gradientBG {
-  0% {
-    background-position: 0% 100%;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  100% {
-    background-position: 0% 100%;
-  }
-}
-
 @keyframes gradientBG {
   0% {
     background-position: 0% 100%;
@@ -719,65 +496,27 @@ header .menu-list-item:after, header .menu-list-item.active:after, header .menu-
   }
 }
 
-@-webkit-keyframes bounce {
-  0% {
-    -webkit-transform: scale(1, 1) translateY(0);
-            transform: scale(1, 1) translateY(0);
-  }
-  10% {
-    -webkit-transform: scale(1, 0.9) translateY(0);
-            transform: scale(1, 0.9) translateY(0);
-  }
-  25% {
-    -webkit-transform: scale(0.9, 1.1) translateY(-18px);
-            transform: scale(0.9, 1.1) translateY(-18px);
-  }
-  50% {
-    -webkit-transform: scale(1.05, 0.95) translateY(0);
-            transform: scale(1.05, 0.95) translateY(0);
-  }
-  57% {
-    -webkit-transform: scale(1, 1) translateY(-3px);
-            transform: scale(1, 1) translateY(-3px);
-  }
-  64% {
-    -webkit-transform: scale(1, 1) translateY(0);
-            transform: scale(1, 1) translateY(0);
-  }
-  100% {
-    -webkit-transform: scale(1, 1) translateY(0);
-            transform: scale(1, 1) translateY(0);
-  }
-}
-
 @keyframes bounce {
   0% {
-    -webkit-transform: scale(1, 1) translateY(0);
-            transform: scale(1, 1) translateY(0);
+    transform: scale(1, 1) translateY(0);
   }
   10% {
-    -webkit-transform: scale(1, 0.9) translateY(0);
-            transform: scale(1, 0.9) translateY(0);
+    transform: scale(1, 0.9) translateY(0);
   }
   25% {
-    -webkit-transform: scale(0.9, 1.1) translateY(-18px);
-            transform: scale(0.9, 1.1) translateY(-18px);
+    transform: scale(0.9, 1.1) translateY(-18px);
   }
   50% {
-    -webkit-transform: scale(1.05, 0.95) translateY(0);
-            transform: scale(1.05, 0.95) translateY(0);
+    transform: scale(1.05, 0.95) translateY(0);
   }
   57% {
-    -webkit-transform: scale(1, 1) translateY(-3px);
-            transform: scale(1, 1) translateY(-3px);
+    transform: scale(1, 1) translateY(-3px);
   }
   64% {
-    -webkit-transform: scale(1, 1) translateY(0);
-            transform: scale(1, 1) translateY(0);
+    transform: scale(1, 1) translateY(0);
   }
   100% {
-    -webkit-transform: scale(1, 1) translateY(0);
-            transform: scale(1, 1) translateY(0);
+    transform: scale(1, 1) translateY(0);
   }
 }
 
@@ -787,13 +526,8 @@ header {
 }
 
 header .menu {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 header .menu-name-img {
@@ -802,38 +536,18 @@ header .menu-name-img {
 }
 
 header .menu-name {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 25%;
-          flex: 1 1 25%;
+  justify-content: start;
+  flex-direction: row;
+  align-items: center;
+  flex: 1 1 25%;
 }
 
 header .menu-list {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 45%;
-          flex: 1 1 45%;
+  justify-content: start;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1 1 45%;
 }
 
 header .menu-list-item {
@@ -870,26 +584,16 @@ header .menu-list-item-link {
 }
 
 header .bagnere {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-flow: row wrap;
-      flex-flow: row wrap;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-flow: row wrap;
   margin-top: 35px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 header .bagnere-block {
   text-align: start;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 40%;
-          flex: 0 0 40%;
+  flex: 0 0 40%;
 }
 
 header .bagnere-block-content {
@@ -901,9 +605,7 @@ header .bagnere-block-content {
 header .bagnere .svg {
   margin-top: 70px;
   text-align: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 40%;
-          flex: 1 1 40%;
+  flex: 1 1 40%;
 }
 
 header .bagnere .svg svg {
@@ -940,21 +642,14 @@ header .bagnere-block-text-typing-title {
 
 @media screen and (max-width: 800px) {
   header .bagnere-block {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
+    flex: 0 0 100%;
   }
 }
 
 @media screen and (max-width: 424px) {
   header .menu-name {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    flex-direction: column;
+    justify-content: center;
   }
   header .menu-name-img {
     margin-right: 0;
@@ -969,41 +664,23 @@ header .bagnere-block-text-typing-title {
 }
 
 #skills .skills-group {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  justify-content: space-around;
+  flex-direction: row;
 }
 
 #skills .skills-group-type {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 30%;
-          flex: 0 1 30%;
+  justify-content: space-around;
+  flex-direction: row;
+  flex: 0 1 30%;
 }
 
 #skills .skills-group-type-title {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%;
+  flex: 1 1 100%;
 }
 
 #skills .skills-group-type-block {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  justify-content: space-around;
+  flex-direction: column;
   display: flex;
   text-align: center;
 }
@@ -1032,15 +709,9 @@ header .bagnere-block-text-typing-title {
 
 @media screen and (max-width: 1009px) {
   #skills .skills-group-type {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 1 100%;
-            flex: 0 1 100%;
+    justify-content: space-around;
+    flex-direction: row;
+    flex: 0 1 100%;
   }
   #skills .skills-group-type:not(:first-child) {
     margin-top: 100px;
@@ -1052,13 +723,8 @@ header .bagnere-block-text-typing-title {
 }
 
 #projects .projects-item {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  justify-content: center;
+  flex-direction: row;
 }
 
 #projects .projects-item-container-block {
@@ -1067,10 +733,8 @@ header .bagnere-block-text-typing-title {
   height: 250px;
   max-width: 100%;
   overflow: hidden;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  -webkit-box-shadow: 0px 5px 16px 2px rgba(0, 0, 0, 0.4);
-          box-shadow: 0px 5px 16px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 5px 16px 2px rgba(0, 0, 0, 0.4);
 }
 
 @media screen and (max-width: 525px) {
@@ -1083,8 +747,7 @@ header .bagnere-block-text-typing-title {
 #projects [class^="projects-item-container-block-img"] {
   width: 100%;
   height: 100%;
-  -webkit-filter: brightness(0.35);
-          filter: brightness(0.35);
+  filter: brightness(0.35);
 }
 
 #projects .projects-item-container-block-img-1 {
@@ -1122,18 +785,16 @@ header .bagnere-block-text-typing-title {
   background-size: cover;
 }
 
+#projects .projects-item-container-block-img-8 {
+  background: url("../img/project8.jpg") center center no-repeat;
+  background-size: cover;
+}
+
 #projects .projects-item-container {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  flex-direction: column;
 }
 
 #projects .projects-item-container a {
@@ -1149,21 +810,13 @@ header .bagnere-block-text-typing-title {
 
 #projects .projects-item-container-content-group {
   height: 45px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-end;
 }
 
 #projects .projects-item-container-content-group-link:hover {
-  -webkit-animation: 1.5s bounce ease;
-          animation: 1.5s bounce ease;
+  animation: 1.5s bounce ease;
 }
 
 #projects .projects-item-container-content-group-link i {
@@ -1173,7 +826,6 @@ header .bagnere-block-text-typing-title {
   font-size: 40px;
   color: white;
   font-weight: 200;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -1199,9 +851,7 @@ header .bagnere-block-text-typing-title {
 
 #path .path-timeline-item {
   padding-top: 25px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-bottom: 75px;
   width: 100%;
 }
@@ -1223,13 +873,8 @@ header .bagnere-block-text-typing-title {
 }
 
 #path .path-timeline-item:nth-child(even) {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  justify-content: space-evenly;
+  flex-direction: row-reverse;
   position: relative;
 }
 
@@ -1244,13 +889,8 @@ header .bagnere-block-text-typing-title {
 }
 
 #path .path-timeline-item:nth-child(odd) {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  justify-content: space-evenly;
+  flex-direction: row;
 }
 
 #path .path-timeline-item:nth-child(odd) em:before {
@@ -1261,9 +901,7 @@ header .bagnere-block-text-typing-title {
 
 #path .path-timeline-item-description,
 #path .path-timeline-item-date {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 40%;
-          flex: 0 0 40%;
+  flex: 0 0 40%;
 }
 
 #path .path-timeline-item-description,
@@ -1297,13 +935,8 @@ header .bagnere-block-text-typing-title {
 }
 
 #path .path-timeline-item-description-technologies {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  justify-content: space-evenly;
+  flex-direction: row;
   margin-top: 15px;
 }
 
@@ -1352,16 +985,9 @@ header .bagnere-block-text-typing-title {
     left: 13px;
   }
   #path .path-timeline-item:nth-child(even), #path .path-timeline-item:nth-child(odd) {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column-reverse;
+    align-items: flex-start;
   }
   #path .path-timeline-item:nth-child(even) .path-timeline-item-description, #path .path-timeline-item:nth-child(odd) .path-timeline-item-description {
     margin-top: 45px;
@@ -1397,42 +1023,18 @@ header .bagnere-block-text-typing-title {
 }
 
 #contact .contact-personnal-info {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-@media screen and (max-width: 800px) {
-  #contact .contact-personnal-info {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
+  justify-content: space-between;
+  flex-direction: row;
 }
 
 #contact .contact-personnal-info-group,
 #contact .contact-message {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 #contact .contact-personnal-info-group {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 45%;
-          flex: 0 0 45%;
+  flex: 0 0 45%;
   min-width: 48%;
 }
 
@@ -1460,39 +1062,22 @@ header .bagnere-block-text-typing-title {
 
 #contact .contact-btn {
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  justify-content: center;
+  flex-direction: row;
 }
 
 @media screen and (max-width: 800px) {
   #contact .contact-personnal-info {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    justify-content: space-between;
+    flex-direction: column;
   }
 }
 
 footer {
   background: linear-gradient(139deg, #231c64 0%, #0c0736 100%);
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
 }
 
 footer .footer-contact-job {
@@ -1512,10 +1097,6 @@ footer i {
   margin: 10px;
   font-size: 25px;
   color: white;
-}
-
-footer .footer-social-devicon-group {
-  text-align: right;
 }
 
 @media screen and (max-width: 672px) {
