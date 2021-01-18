@@ -1,6 +1,6 @@
 h1,h2 {
     text-transform: uppercase;
-    font-family: "Segoe UI";
+    font-family: "Segoe UI",'Montserrat', sans-serif;;
     font-size: 1.5em;
 }
 
@@ -10,13 +10,14 @@ h2,h3 {
 }
 
 h2 {
-    font-size: 2.3em;
-    background: $main-gradient-title;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 400% 400%;
-    -webkit-animation: gradientBG 30s ease-in-out infinite;
-    animation: gradientBG 30s ease-in-out infinite;
+    font-size: 2.1em;
+    color: #cc9602;
+    // background: $main-gradient-title;
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+    // background-size: 400% 400%;
+    // -webkit-animation: gradientBG 30s ease-in-out infinite;
+    // animation: gradientBG 30s ease-in-out infinite;
 }
 
 h3 {font-size: 1.8em;
