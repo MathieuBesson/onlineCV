@@ -46,19 +46,34 @@ button {
   text-align: center;
   text-transform: uppercase;
   font-weight: 700;
-  background-color: transparent;
   padding: 10px 20px;
   margin-top: 15px;
-  border: 2px solid #3CCFCF;
   border-radius: 25px;
-  color: #3CCFCF;
   font-size: 15px;
   transition: all .3s ease;
+  margin-right: 25px;
 }
 
-button:hover {
+button.btn-first {
+  background-color: transparent;
+  border: 2px solid #3CCFCF;
+  color: #3CCFCF;
+}
+
+button.btn-first:hover {
   background-color: #3CCFCF;
   color: #0E0A30;
+}
+
+button.btn-second {
+  background-color: #3CCFCF;
+  border: 2px solid #3CCFCF;
+  color: #0E0A30;
+}
+
+button.btn-second:hover {
+  background-color: transparent;
+  color: #3CCFCF;
 }
 
 @media screen and (max-width: 525px) {

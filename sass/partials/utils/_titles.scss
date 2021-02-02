@@ -32,17 +32,29 @@ button {
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
-    background-color: transparent;
     padding: 10px 20px;
     margin-top: 15px;
-    border: 2px solid $main-color;
     border-radius: 25px;
-    color: $main-color;
     font-size: 15px;
     transition: all .3s ease;
-    &:hover{
+    margin-right: 25px;
+    &.btn-first{
+        background-color: transparent;
+        border: 2px solid $main-color;
+        color: $main-color;
+        &:hover{
+            background-color: $main-color;
+            color:#0E0A30;
+        }
+    }
+    &.btn-second{
         background-color: $main-color;
-        color:#0E0A30;
+        border: 2px solid $main-color;
+        color: #0E0A30;
+        &:hover{
+            background-color: transparent;
+            color: $main-color;
+        }
     }
 }
 
