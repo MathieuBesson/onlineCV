@@ -1,4 +1,4 @@
-h1,h2 {
+h1,h2, button {
     text-transform: uppercase;
     font-family: "Segoe UI",'Montserrat', sans-serif;;
     font-size: 1.5em;
@@ -28,7 +28,6 @@ h3 {font-size: 1.8em;
 button {
     cursor: pointer;
     outline-style : none;
-    font-family: "Segoe UI";
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
