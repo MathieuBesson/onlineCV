@@ -9,7 +9,7 @@
     }
     .skills-group-type-title {flex: 1 1 100%;}
     .skills-group-type-block {
-        @include flex(space-around, column);
+        @include flex(center, column);
         display: flex;
         text-align: center;
     }

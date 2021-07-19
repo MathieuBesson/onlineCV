@@ -736,7 +736,7 @@ header .bagnere-block-text-typing-title {
   flex: 1 1 100%;
 }
 #skills .skills-group-type-block {
-  justify-content: space-around;
+  justify-content: center;
   flex-direction: column;
   display: flex;
   text-align: center;
@@ -953,9 +953,6 @@ header .bagnere-block-text-typing-title {
 #path .path-timeline-item-description-content > ul {
   margin-left: 10%;
 }
-#path .path-timeline-item-description-content > ul li::before {
-  content: "󰶻";
-}
 #path .path-timeline-item-description-technologies {
   justify-content: space-evenly;
   flex-direction: row;
@@ -979,12 +976,6 @@ header .bagnere-block-text-typing-title {
 }
 #path .path-timeline-item-description-content li a {
   color: #3CCFCF;
-}
-#path .path-timeline-item-description-content li::before {
-  color: #3CCFCF;
-  content: "󰄾";
-  font: normal normal normal 20px/1 "Material Design Icons";
-  margin-right: 5px;
 }
 #path i {
   margin: 0 5px;
