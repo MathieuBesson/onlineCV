@@ -6,6 +6,6 @@
     </a>
 </p>
 
-Présentation de mon parcours et de mes expériences !
+Présentation de mon parcours et de mes expériences
 
 Lien vers la version en ligne : https://mathieu-besson.netlify.app/
